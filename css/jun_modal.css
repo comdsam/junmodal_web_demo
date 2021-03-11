@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {font-family: 'Noto Sans KR', sans-serif; background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #60666d; font-weight: 400;}
+
+.all-wrap {width: 800px; margin: 30px auto 30px;}
+h1, h2, h3 {font-weight: 700; text-align: center;}
+a {transition: all 0.6s}
+a:hover {color: aqua}
+
+header {border-radius: 30px 30px 0 0; background: #fff; text-align: center; line-height: 60px; box-shadow: 0 15px 30px -20px rgba(0,0,0, 0.5);}
+
+.test-box {padding: 50px; margin-top: 10px; background: #fff; box-shadow: 0 15px 30px -20px rgba(0,0,0, 0.5);}
+.test-box img {width: 100px; border-radius: 10px; overflow: hidden; margin: 5px 10px 5px 0; vertical-align: middle;}
+h2 {border: 1px solid #ddd; padding: 20px; border-radius: 10px; margin-bottom: 10px;}
+
+footer {border-radius: 0 0 30px 30px; background: #fff; text-align: center; height: 60px; padding: 10px; box-shadow: 0 15px 30px -20px rgba(0,0,0, 0.5); margin-top: 10px;}
+footer address {border-radius: 0 0 25px 25px; background: #333; height: 60px; line-height: 60px; color: #fff; }
+
+/* .jModal(); jun_modal_popup -style start- */
+/* jun_Modal_popup Code by comdsam@naver.com */
+#jun-modal-lbx {
+	display: none;
+}
+#jun-modal-lbx.on {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 9999; /*만약 모달창이 제일위로 나타나지 않으면 z-index를 확인 하세요*/
+}
+#jun-modal-lbx.on #jun-img-lbx {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+	justify-content: center;
+}
+#jun-modal-lbx #jun-close-lbx {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	cursor: pointer;
+}
+#jun-modal-lbx #jun-close-border-lbx {
+	position: relative;
+	height: 30px;
+	width: 30px;
+	border-top: 2px solid #fff;
+	transform: rotate(45deg);
+}
+#jun-modal-lbx #jun-close-border-lbx::after {
+	content: '';
+	position: absolute;
+	top: -16px;
+	left: 14px;
+	width: 30px;
+	height: 30px;
+	border-left: 2px solid #fff;
+}
+/* .jModal(); jun_modal_popup -style end- */
